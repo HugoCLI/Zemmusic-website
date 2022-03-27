@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zemmusic - Super bot Discord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        * {
+            font-family: 'Mukta', sans-serif;
+            box-sizing: border-box;
+            margin: unset;
+            user-select: none;
+        }
+
+        body {
+            background: #131b22;
+        }
+
+        svg#visual {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            left:0;
+            right:0;
+            bottom:0;
+            top:0;
+
+        }
+
+
+        .contains {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 5;
+            margin: auto;
+            top: 0;
+            padding-top:100px;
+            height: 508px;
+            background:rgba(95,80,228,1);
+            min-width: 300px;
+            display: grid;
+            grid-template-columns: 650px calc(100% - 650px);
+            align-items: center;
+        }
+
+        .about {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 5;
+            margin: auto;
+            top: 508px;
+            background: rgb(95,80,228);
+            background: linear-gradient(180deg, rgba(95,80,228,1) 6%, rgba(19,27,34,0) 40%);
+            height: 750px;
+            min-width: 300px;
+        }
+
+        .contains img {
+            height: 408px;
+            width: 611px;
+        }
+
+        .contains div:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .contains h1 {
+            color:#eee;
+            font-weight: 300;
+            font-family: 'Dela Gothic One', cursive;
+            font-size:40px;
+        }
+
+        .contains p {
+            color:#eee;
+            font-weight: 300;
+            margin-top:20px;
+            font-family: 'Abel', sans-serif;
+            font-size:30px;
+        }
+
+        .contains a {
+            border-radius:5px;
+            padding:15px 20px;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            color:#eee;
+            margin-top:75px;
+            font-size:15px;
+            display:inline-flex;
+            text-decoration: none;
+        }
+
+        .contains a.btn-color {
+            background:#131b22;
+            color:#eee;
+        }
+
+        .contains a.btn-light {
+            background:transparent;
+            color:#131b22;
+            box-shadow: none;
+            margin-left:25px;
+        }
+
+    </style>
+
+
+
+    <div class="contains">
+        <div>
+            <img src="bgr.png">
+        </div>
+        <div>
+            <h1>Zemmusic</h1>
+            <p>Le bot le plus fun pour écouter de la musique sur Discord</p>
+
+            <a class="btn-color" href="">Ajouter à mon serveur</a> <a class="btn-light" href="">Dashboard</a>
+        </div>
+    </div>
+    <div class="about">
+
+    </div>
+</body>
+</html>
